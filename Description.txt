@@ -1,0 +1,21 @@
+﻿* Abstract
+Boids (numerical model for bird's flock) simulation code implemented with Python.
+
+* Author
+H. Tsubota
+@H_Tsubota on twitter
+haruka.tsubota At gmail.com
+
+* System Requirements
+Python 2.7
+PyQt4
+PyOpenGL
+NumPy
+
+* Command for execute
+python app.py
+
+* Reference
+Reynolds, C. W. "Flocks, Herds, and Schools: A Distributed Behavioral Model, in Computer Graphics", 21(4) (SIGGRAPH '87 Conference Proceedings) pages 25-34, http://www.red3d.com/cwr/papers/1987/SIGGRAPH87.pdf.
+"Boids Pseudocode", http://www.vergenet.net/~conrad/boids/pseudocode.html.
+Cyrille Rossant, "2D graphics rendering tutorial with PyOpenGL", http://cyrille.rossant.net/2d-graphics-rendering-tutorial-with-pyopengl

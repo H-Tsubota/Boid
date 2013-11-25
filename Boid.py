@@ -18,12 +18,12 @@ class Boids:
 		self.PARAM_ALINGMENT = 0.125
 		self.areaWidth = 100
 		
-		# create boids
+		# Create boids
 		self.boids = []
 		for i in range(self.NUM_BOIDS):
 			self.boids.append(Boid())
 
-		# initialize boids
+		# Initialize boids
 		for i in range(self.NUM_BOIDS):
 			self.boids[i].position[0] = random.uniform(0, 40.0)
 			self.boids[i].position[1] = random.uniform(0, 40.0)
@@ -115,9 +115,9 @@ class Boids:
 			v3= self.getAlingmentVelocity(i)
 			
 			for j in range(3):
-				# update velocity
+				# Update velocity
 				self.boids[i].velocity[j] = self.boids[i].velocity[j]  + v1[j] + v2[j] + + v3[j]
-				# update position
+				# Update position
 				self.boids[i].position[j] = self.boids[i].position[j]  + self.boids[i].velocity[j]
 		
 		for i in range(self.NUM_BOIDS):
@@ -129,7 +129,7 @@ class Boids:
 if __name__ == "__main__":
 	myBoids = Boids()
 
-	# calculate 5 steps
+	# Calculate 5 steps
 	for i in range(5):
 		data = myBoids.getCoords2D()
 		print data		

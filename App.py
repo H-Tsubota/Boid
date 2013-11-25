@@ -59,7 +59,7 @@ if __name__ == '__main__':
 			self.widget = GLPlotWidget()
 			self.widget.set_data(self.data)
 			
-			# put the window at (100, 100)
+			# Put the window at (100, 100)
 			self.setGeometry(100, 100, self.widget.width, self.widget.height)
 			self.setCentralWidget(self.widget)
 
